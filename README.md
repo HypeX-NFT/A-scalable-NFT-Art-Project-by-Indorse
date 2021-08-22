@@ -5,6 +5,6 @@
   - Common: 57%
   - Rare: 30%
   - Epic: 10%
-  - Lengendary: 3%
+  - Legendary: 3%
 4. Used the trained GAN model to fuse the product photo into the background.
 5. Based on the randomly generated ID, we differentiate the rarity of each product-background pair.
