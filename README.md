@@ -7,4 +7,4 @@
   - Rare: 30%
   - Epic: 10%
   - Legendary: 3%
-5. Based on the randomly generated ID, we differentiate the rarity of each product-background pair.
+4. Based on the randomly generated ID, we differentiate the rarity of each product-background pair.
