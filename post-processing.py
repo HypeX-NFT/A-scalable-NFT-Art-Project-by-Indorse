@@ -4,6 +4,9 @@ import os
 from os import listdir
 from os.path import isfile, join
 import random
+##################### TO CHANGE ###################################################
+path = "/Users/jerrypan/Desktop/Research & Internship Project/A-scalable-NFT-Art-Project-by-Indorse/pytorch-CycleGAN-and-pix2pix/image-data/"
+##################### TO CHANGE ###################################################
 
 string = "n"
 encoded = string.encode()
@@ -12,7 +15,7 @@ hexDigits = hashObject.hexdigest()
 hexDigitsInDecimal = int(hexDigits, 16)
 print(hexDigits)  # ce76c835a3668e99f680f1b043f09b6bbbb71905e6f2b2079f0dd59daba5002e
 
-img = Image.open("/Users/jerrypan/Desktop/Research & Internship Project/A-scalable-NFT-Art-Project-by-Indorse/pytorch-CycleGAN-and-pix2pix/image-data/Background/1.png")
+img = Image.open(path + "Background/1.png")
 
 width, height = img.size
 # print(width, height)
@@ -55,7 +58,6 @@ for x in range(0, 64, 8):
     code = code + hexR + hexG + hexB + hexA
 # print(code)
 #############################################################################################
-path = "/Users/jerrypan/Desktop/Research & Internship Project/A-scalable-NFT-Art-Project-by-Indorse/pytorch-CycleGAN-and-pix2pix/image-data/"
 pathBackgrounds = os.listdir(path + "Background/")
 pathFrames = os.listdir(path + "Frames/")
 pathProducts = os.listdir(path + "Product/")
