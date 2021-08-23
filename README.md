@@ -8,3 +8,12 @@
   - Epic: 10%
   - Legendary: 3%
 4. Based on the randomly generated ID, we differentiated the rarity of each product-background pair.
+
+
+# Interface with Backend on Rarible/Circle API/IPFS
+input: 
+- Path
+- string: e.g. userID + System.time()
+
+output:
+- Photo: Text + Product + Frame + Background (After CycleGan) + Encoding
