@@ -8,5 +8,5 @@ r = requests.get(url)
 soup = BeautifulSoup(r.text, 'html.parser')
 
 images = soup.find_all('img')
-for image in images:
-    print(image['src'])
+# for image in images:
+#     print(image['src'])
