@@ -14,8 +14,9 @@ for modelOutput in modelOutputs:
     for image in allImages:
         img = Image.open(inputPath + image)
         count += 1
-        imgCropped = img.crop((150, 0, 1230, 1380))
-        imgCropped.save(outputPath + str(count) + ".png")
+        # imgCropped = img.crop((150, 0, 1230, 1380))
+        imgCropped = img.resize((1080, 1380))
+        imgCropped.save(outputPath + modelOutput + str(count) + ".png")
         print(count)
 
 print("DONE")
