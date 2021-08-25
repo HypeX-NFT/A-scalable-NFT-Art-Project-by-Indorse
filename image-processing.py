@@ -81,7 +81,7 @@ elif (hexDigitsInDecimal % 100) / 100 <= rareProb:
     frameNum = "2-Rare.png"
 else:
     frameNum = "1-Common.png"
-######################################################################
+# #####################################################################
 backgroundImg = Image.open(path + "Background/" + str(backgroundNum))
 frameImg = Image.open(path + "Frames/" + frameNum)
 productImg = Image.open(path + "Product/" + productNum + "/product.png")
