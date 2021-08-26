@@ -87,6 +87,7 @@ frameImg = Image.open(path + "Frames/" + frameNum)
 productImg = Image.open(path + "Product/" + productNum + "/product.png")
 textImg = Image.open(path + "Product/" + productNum + "/" + frameNum[0] + ".png")
 
+
 for x in range(0, 64, 8):
     r, g, b, a = int(hexDigits[x:x+2], 16), int(hexDigits[x+2:x+4], 16), int(hexDigits[x+4:x+6], 16), int(hexDigits[x+6:x+8], 16)
     backgroundImg.putpixel((x, 0), (r, g, b, a))
